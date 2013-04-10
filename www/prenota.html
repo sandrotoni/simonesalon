@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> 
+        <meta name="apple-mobile-web-app-capable" content="yes" /> 
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+        <title>
+		Simone Salon
+        </title>
+		
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+ 		<link rel="stylesheet" href="css/jquery.mobile-1.3.0.css" />
+		<script type="text/javascript" src="js/jquery.mobile-1.3.0.min.js"></script>
+
+        <!-- User-generated js -->
+
+    </head>
+	<body onload="init()">
+        <!-- Modulo Invio Segnalazione -->
+        <section id="prenotazione" data-role="page" data-theme="b">
+            <header data-role="header">
+				<a href="index.html" data-role="button" data-icon="arrow-l">Back</a>
+                <h1>
+                    Simone Salon
+                </h1>
+            </header>
+            <div data-role="content" class="content">
+			<center>
+					<form action="invio.php" method="post" id="modulo">
+						<table>
+							<tr>
+								<td>Nome e Cognome:<br/>
+								<label>
+								  <input name="nome" type="text" id="nome" size="60" />
+								</label></td>
+							</tr>
+							<tr>
+								<td>Telefono:<br/>
+								<label>
+								  <input name="telefono" type="text" id="telefono" size="40" />
+								</label></td>
+							</tr>
+							<tr>
+								<td>Indirizzo e-mail:<br/>
+								<label>
+								  <input name="mail" type="text" id="mail" size="40" />
+								</label></td>
+							</tr>
+							<tr>
+								<td>Richiesta:<br/>
+								<label>
+								  <input name="object" type="text" id="object" size="40" value="Prenotazione"/>
+								</label></td>
+							</tr>
+							<tr>
+								<td>Data e ora prenotazione:<br/>
+								<i>Es. 03-10-2013 15:00</i>
+								<label>
+								  <input name="data" type="text" id="data" size="30"/>
+								</label></td>
+							</tr>
+						</table>
+						<fieldset data-role="controlgroup" data-mini="true">
+							<legend>Servizi:</legend>
+								<label><input type="checkbox" name="serv1"  id="serv1" value="Piega" data-theme="c"/>Piega</label>
+								<label><input type="checkbox" name="serv2"  id="serv2" value="Trattamento Vaporzone Climazon" data-theme="c"/>Trattamento Vaporzone/Climazon</label>
+								<label><input type="checkbox" name="serv3"  id="serv3" value="Ricostruz. Sebastian" data-theme="c"/>Ricostruz. Sebastian</label>
+								<label><input type="checkbox" name="serv4"  id="serv4" value="Ricostruz. Shiseido" data-theme="c"/>Ricostruz. Shiseido</label>
+								<label><input type="checkbox" name="serv5"  id="serv5" value="Ritocco Taglio" data-theme="c"/>Ritocco Taglio</label>
+								<label><input type="checkbox" name="serv6"  id="serv6" value="Taglio Completo" data-theme="c"/>Taglio Completo</label>
+								<label><input type="checkbox" name="serv7"  id="serv7" value="Taglio Uomo" data-theme="c"/>Taglio Uomo</label>
+								<label><input type="checkbox" name="serv8"  id="serv8" value="Meches" data-theme="c"/>Meches</label>
+								<label><input type="checkbox" name="serv9"  id="serv9" value="Balayage" data-theme="c"/>Balayage</label>
+								<label><input type="checkbox" name="serv10"  id="serv10" value="Shatush" data-theme="c"/>Shatush</label>
+								<label><input type="checkbox" name="serv11"  id="serv11" value="Riflessante" data-theme="c"/>Riflessante</label>
+								<label><input type="checkbox" name="serv12"  id="serv12" value="Effetti colore" data-theme="c"/>Effetti colore</label>
+								<label><input type="checkbox" name="serv13"  id="serv13" value="Stiraggio" data-theme="c"/>Stiraggio</label>
+								<label><input type="checkbox" name="serv14"  id="serv14" value="Ondulazione" data-theme="c"/>Ondulazione</label>
+								<label><input type="checkbox" name="serv15"  id="serv15" value="Pettinata" data-theme="c"/>Pettinata</label>
+								<label><input type="checkbox" name="serv16"  id="serv16" value="Acconciatura" data-theme="c"/>Acconciatura</label>
+								<label><input type="checkbox" name="serv17"  id="serv17" value="Trucco professionale" data-theme="c"/>Trucco professionale</label>
+						</fieldset>
+						<table>
+							<tr>
+								<td><label>
+								<input type="submit" name="submit" id="submit" value="Invia" />
+								</label></td>
+								<td><label>
+								<input type="reset" name="cancella" id="cancella" value="Cancella"  data-theme="a"/>
+								</label></td>
+							</tr>
+						</table>
+					</form>
+			</center>
+			</div>
+            <footer data-role="footer">
+				<h2>
+                    Simone Salon &copy 2013
+                </h2>
+			</footer>
+        </section>
+		<!-- FINE Modulo Invio Segnalazione -->
+	</body>
+</html>
